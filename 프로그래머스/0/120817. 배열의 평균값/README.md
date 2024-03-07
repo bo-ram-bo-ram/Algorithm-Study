@@ -67,5 +67,20 @@
 <li><code>numbers</code>의 원소들의 평균 값은 94.0입니다.</li>
 </ul>
 
+<hr>
+
+## remind
+
+sum
+sum(iterable)은 입력 데이터의 합을 리턴하는 함수이다.
+
+>  sum([1,2,3])
+> 
+> 6
+> 
+> sum((4,5,6))
+> 
+> 15
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
