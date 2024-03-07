@@ -83,5 +83,10 @@
 <li><code>angle</code>이 180이므로 평각입니다. 따라서 4를 return합니다.</li>
 </ul>
 
+<hr>
+
+### remind
+둔각을 나타낼 때 조건을 90<angle<180으로 처음에 접근했으나 angle<180만 해주어도 됨.
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
