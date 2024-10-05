@@ -26,29 +26,15 @@ def dfs(x,y,color,board,visited):
 for i in range(n):
     for j in range(n):
         if not weak_visited[i][j]:
-            if weak_board[i][j]=='B':
-                weak_visited[i][j] = True
-                weak += 1
-                dfs(i,j,'B',weak_board,weak_visited)
-            elif weak_board[i][j] == 'G':
-                weak_visited[i][j] = True
-                weak += 1
-                dfs(i,j,'G',weak_board,weak_visited)
+            weak_visited[i][j] = True
+            weak += 1
+            dfs(i,j,weak_board[i][j],weak_board,weak_visited)
 
 for i in range(n):
     for j in range(n):
         if not strong_visited[i][j]:
-            if strong_board[i][j]=='B':
-                strong_visited[i][j] = True
-                strong += 1
-                dfs(i,j,'B',strong_board, strong_visited)
-            elif strong_board[i][j] == 'G':
-                strong_visited[i][j] = True
-                strong += 1
-                dfs(i,j,'G',strong_board, strong_visited)
-            elif strong_board[i][j] == 'R':
-                strong_visited[i][j] = True
-                strong += 1
-                dfs(i,j,'R',strong_board, strong_visited)
+            strong_visited[i][j] = True
+            strong += 1
+            dfs(i,j,strong_board[i][j],strong_board, strong_visited)
 
 print(strong,weak)
